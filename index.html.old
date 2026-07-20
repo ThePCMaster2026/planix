@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Planix OS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <a href="/planix"><img src="Planix_OS.png" alt="Planix OS Logo" width="200" height="100"></a>
+    <h1>Welcome to Planix OS</h1>
+    <p>Planix OS is an operating system made by a 12-year-old named Ali Yankı Ünübol, also known as ThePCMaster.</p>
+    <p>Downloads are currently arm64-exclusive, with no ISO downloads available.</p>
+    <p>Send bug reports <a href="mailto:n78901791@gmail.com">here</a></p>
+    <a class="download" href="https://github.com/ThePCMaster2026/planix/releases/download/1.0/planix-1.0-aarch64.img.xz">Download Planix 1.0 Codename "MerCur"<br><small>Login with user <code>root</code> and password <code>root</code></small></a>
+    <br><small>Install Planix to any disk/storage device (SSD, HDD, USB drive, SD/microSD card, etc.) using the following command: </small><pre>xzcat planix-1.0-aarch64.img.xz | sudo dd of=/dev/[target device] bs=4M status=progress conv=fsync</pre><small>Replace <code>[target device]</code> with the name of the target device. For instance: sda, nvme0n1, ada, vda, etc.</small>
+    <br><small><strong>WARNING:</strong> To avoid selecting the wrong device, run <code>lsblk</code>. Do NOT select the device containing your current operating system. <br>On most Linux systems, this is the device mounted at <code>/</code></small>
+    <br><br><a href="https://github.com/ThePCMaster2026/planix/releases/download/1.0/planix-1.0-aarch64.img.xz.sha256">Download SHA256 sum</a>
+</body>
+    <footer><br>
+        <small>ThePCMaster 2026.</small><br>
+        <small>Subscribe to <a href="https://youtube.com/@ThePCMaster2026">ThePCMaster</a> on YouTube!</small>
+    </footer>
+</html>
