@@ -15,19 +15,6 @@ a.download {
     font-weight: bold;
     transition: background 0.2s;
 }
-a.downloaddisabled {
-    display: inline-block;
-    background: #0078d4;
-    color: white;
-    padding: 12px 20px;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
-    transition: background 0.2s;
-    pointer-events: none;
-    cursor: default;
-    opacity: 0.5;
-}
 a.download:hover {
     background: #005ea6;
 }
