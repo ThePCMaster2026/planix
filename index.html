@@ -17,12 +17,26 @@
     pointer-events: none;
     cursor: default;
     opacity: 0.5;
+}</style>
+<style>
+.warning-banner {
+    padding: 12px 16px;
+    margin: 16px 0;
+    border: 1px solid #d99a00;
+    border-radius: 6px;
+    background: #fff3cd;
+    color: #664d03;
+    font-family: sans-serif;
 }
 </style>
-    <a class="download" href="https://github.com/ThePCMaster2026/planix/releases/download/1.1/planix-1.1-aarch64.img.xz">Download Planix 1.1 Codename "MerCur Extended"<br><small>Login with user <code>planix</code> and password <code>planix</code></small></a>
-    <br><small>Install Planix to any disk/storage device (SSD, HDD, USB drive, SD/microSD card, etc.) using the following command: </small><pre>xzcat planix-1.1-aarch64.img.xz | sudo dd of=/dev/[target device] bs=4M status=progress conv=fsync</pre><small>Replace <code>[target device]</code> with the name of the target device. For instance: sda, nvme0n1, ada, vda, etc.</small>
-    <br><small><strong>WARNING:</strong> To avoid selecting the wrong device, run <code>lsblk</code>. Do NOT select the device containing your current operating system. <br>On most Linux systems, this is the device mounted at <code>/</code></small>
-    <br><br><a href="https://github.com/ThePCMaster2026/planix/releases/download/1.1/planix-1.1-aarch64.img.xz.sha256">Download SHA256 sum</a>
+    <div class="warning-banner">
+    <strong>⚠️ Warning:</strong>
+    This website is currently under construction. Please check back later.
+    </div>
+    <a class="download" href="about:blank">Download Planix 1.1.1 Codename "MerCur Extended"<br><small>Login with user <code>planix</code> and password <code>planix</code></small></a>
+    <br><small>Install Planix to any disk/storage device (SSD, HDD, USB drive, SD/microSD card, etc.) using the following command: </small><pre>xzcat planix-1.1.1-aarch64.img.xz | sudo dd of=/dev/[target device] bs=4M status=progress conv=fsync</pre><small>Replace <code>[target device]</code> with the name of the target device. For instance: sda, nvme0n1, ada, vda, etc.</small>
+    <br><small><strong>WARNING:</strong> To avoid selecting the wrong device, run <code>lsblk</code>. Do NOT select the device containing your current operating system. <br>On most Linux systems, this is the device mounted at <code>/</code>(it could be <code>/dev/root</code> for you, make sure to double-check)</small>
+    <br><br><a href="about:blank">Download SHA256 sum</a>
     <br><p>Release notes:</p>
     <small>Added sudo, inetutils, mpc, isl, man-db(and its dependencies)<br> Updated GCC to version 16.2.0
 <br>Updated glibc to version 2.44<br>Updated Linux kernel to version 7.1.10-mercurex<br>Updated nano to version 9.2<br>Enabled tty2, tty3, tty4, tty5, tty6 and tty7 (additions to tty1)<br>Locked root account, making it only accessible via sudo<br>Made the 'planix' account with password 'planix'<br>Created GCC tests directory /usr/local/bin/tests/ (usage: cd into the dir, then run gcc [test] -o [test without .c and _], e.g. gcc stdio_test.c -o stdiotest)</small>
